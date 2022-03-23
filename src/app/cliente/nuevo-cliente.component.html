@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-5 mx-auto">
+      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+          <div class="col">
+            <label class="form-label">Nombres:</label>
+            <input type="text" class="form-control" aria-label="firstName" id="firstName" name="firstName"
+              [(ngModel)]="firstName">
+          </div>
+
+          <div class="col">
+            <label class="form-label">Apellidos</label>
+            <input type="text" class="form-control" aria-label="lastName" id="lastName" name="lastName"
+              [(ngModel)]="lastName">
+          </div>
+             
+          <div class="col">
+            <label class="form-label">Compañia</label>
+            <input type="text" class="form-control" aria-label="company" id="company"
+              name="company" [(ngModel)]="company">
+          </div>
+
+        <br>
+        <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Crear</button>
+      </form>
+    </div>
+  </div>
+</div>

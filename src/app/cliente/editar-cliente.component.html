@@ -1,0 +1,37 @@
+<div class="container" *ngIf="cliente">
+    <div class="row mt-5">
+        <div class="col-md-10 mx-auto">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Numero Identificacion</label>
+                        <input type="number" class="form-control" placeholder="Numero Documento"
+                            aria-label="Numero Documento" id="id" name="id"
+                            [(ngModel)]="cliente.id" disabled="true">
+                    </div>
+
+                    <div class="col">
+                        <label class="form-label">Nombres</label>
+                        <input type="text" class="form-control" aria-label="Primer Nombre" id="firstName"
+                            name="firstName" [(ngModel)]="cliente.firstName">
+                    </div>
+
+                    <div class="col">
+                        <label class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" aria-label="Segundo Nombre" id="lastName"
+                            name="lastName" [(ngModel)]="cliente.lastName">
+                    </div>
+                    
+                    <div class="col">
+                        <label class="form-label">Compañia</label>
+                        <input type="text" class="form-control" aria-label="Compañia" id="company"
+                            name="company" [(ngModel)]="cliente.company">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>
