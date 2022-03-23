@@ -2,7 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
+Se debe tener instalado node.js:
+
+https://nodejs.org/es/
+
 ## Development server
+
+clonar el proyecto y abrirlo en un ide ejm: VISUAL STUDIO CODE:
+
+https://code.visualstudio.com/download
 
 Run 'npm install' and 'npm start' for a dev server.
 
